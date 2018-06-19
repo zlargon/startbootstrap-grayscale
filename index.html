@@ -18,6 +18,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
 
+    <!-- Custom styles for photo slideshow -->
+    <link rel="stylesheet" href="/css/slideshow.css">
     <!-- Custom styles for this template -->
     <link href="css/grayscale.min.css" rel="stylesheet">
 
@@ -86,15 +88,37 @@
       </div>
     </section>
 
-    <!-- Download Section -->
-    <section id="download" class="download-section content-section text-center">
-      <div class="container">
-        <div class="col-lg-8 mx-auto">
-          <h2>Download Grayscale</h2>
-          <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-          <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
-        </div>
-      </div>
+    <!-- Photos section-->
+    <section id="photos" class="content-section slideshow-container">
+     <div class="container col-lg-8 mx-auto">
+       <h2 align="center">Photos of the Park</h2>
+       <div class="slideshow-container">
+         <div class="mySlides">
+           <div class="numbertext">1 / 3</div>
+           <img src="../img/1.jpg" style="width:100%">
+           <div class="text">Sunrise</div>
+         </div>
+         <div class="mySlides">
+           <div class="numbertext">2 / 3</div>
+           <img src="../img/2.jpg" style="width:100%">
+           <div class="text">Sunset</div>
+         </div>
+
+         <div class="mySlides">
+           <div class="numbertext">3 / 3</div>
+           <img src="../img/3.jpg" style="width:100%">
+           <div class="text">Afternoon</div>
+         </div>
+         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+         <a class="next" onclick="plusSlides(1)">&#10095;</a>
+       </div>
+         <br>
+         <div style="text-align:center">
+           <span class="dot" onclick="currentSlide(1)"></span>
+           <span class="dot" onclick="currentSlide(2)"></span>
+           <span class="dot" onclick="currentSlide(3)"></span>
+         </div>
+       </div>
     </section>
 
     <!-- Contact Section -->
@@ -151,6 +175,8 @@
     <!-- Custom scripts for this template -->
     <script src="js/grayscale.min.js"></script>
 
+    <!-- Custom scripts for this template -->
+    <script src="js/slideshow.js"></script>
   </body>
 
 </html>
